@@ -57,10 +57,6 @@ class _HomeScreenState extends State<HomeScreen> {
               // Access the Hive box
               final itemsBox = Hive.box('items');
 
-              // Create a new Post instance or use the 'post' variable representing the tapped item
-              // For example, if you want to add the post at 'index' from the 'posts' list:
-              // final postToAdd = posts[index];
-
               // Convert the post data to a Map to store it in Hive
               final postMap = {
                 'userId': post.userId,
